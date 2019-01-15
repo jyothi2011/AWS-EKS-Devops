@@ -24,3 +24,5 @@ enables authentication for API access
 # Create base AWS infrastructure
 - Create VPC multi-AZ
 - Create Security group
+
+https://docs.aws.amazon.com/pt_br/eks/latest/userguide/getting-started.html

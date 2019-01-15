@@ -20,7 +20,7 @@
   * on Linux:
   ```
   curl -o aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.10.3/2018-07-26/bin/linux/amd64/aws-iam-authenticator   
-  chmod +x ./aws-iam-authenticator  
+  chmod +x ./aws-iam-authenticator
   cp ./aws-iam-authenticator /usr/local/bin/
   ```
     * Test: ```aws-iam-authenticator help```
@@ -32,6 +32,14 @@
   mv aws-iam-authenticator.exe $HOME/bin
   ```
     * Test: ```aws-iam-authenticator.exe help```
+  * on Mac:
+  ```
+  curl -o aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.10.3/2018-07-26/bin/darwin/amd64/aws-iam-authenticator
+  chmod +x ./aws-iam-authenticator
+  mkdir bin
+  cp ./aws-iam-authenticator $HOME/bin/aws-iam-authenticator && export PATH=$HOME/bin:$PATH
+  echo 'export PATH=$HOME/bin:$PATH' >> ~/.zshrc
+  ```
 
 * aws credentials (ACCESS KEY+SECRET)
 now we have to provide the Access key+secret from the first lesson _Part I : covering prerequisites_ and put them into the credentials template.
